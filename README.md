@@ -6,6 +6,9 @@ Conteúdo estudado no curso [Dart: entendendo a Orientação a Objetos](https://
 
 ## 📌 Assuntos
 
+> :construction: em construção :construction:
+
+
 ## 📜 Paradigmas
 
 Existem diversos tipos de paradigmas da programação, como Funcional, Procedural, e **Orientação a Objetos**.
