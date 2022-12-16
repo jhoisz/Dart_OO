@@ -1,4 +1,4 @@
-<h1 align="center"> Dart: 5 métodos da lista do Dart 📋 </h1>
+<h1 align="center"> Dart: entendendo a Orientação a Objeto 🪑 </h1>
 
 ## ℹ️ Sobre
 
@@ -6,7 +6,14 @@ Conteúdo estudado no curso [Dart: entendendo a Orientação a Objetos](https://
 
 ## 📌 Assuntos
 
+<<<<<<< HEAD
 ## 📜 Paradigma de Orientação a Objetos
+=======
+> :construction: em construção :construction:
+
+
+## 📜 Paradigmas
+>>>>>>> 207d253dceb463ef9316b4fb953337aa7a853ff9
 
 Existem diversos tipos de paradigmas da programação, como Funcional, Procedural, e **Orientação a Objetos**.
 
