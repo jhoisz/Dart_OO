@@ -6,14 +6,13 @@ Conteúdo estudado no curso [Dart: entendendo a Orientação a Objetos](https://
 
 ## 📌 Assuntos
 
-<<<<<<< HEAD
+- **Funções:** Técnica para isolar um trecho de código com o objetivo de reutilizá-lo.
+- `class`: Como criar uma classe e definir suas propriedades, construtores e métodos.
+- `extends`: Como estender uma classe para herdar suas propriedades e métodos.
+- `abstract`: Como criar uma classe abstrata para que contém métodos abstratos que serão usados pelas classes que a implementarem.
+- `implements`: Como implementar uma classe abstrata em uma classe concreta.
+
 ## 📜 Paradigma de Orientação a Objetos
-=======
-> :construction: em construção :construction:
-
-
-## 📜 Paradigmas
->>>>>>> 207d253dceb463ef9316b4fb953337aa7a853ff9
 
 Existem diversos tipos de paradigmas da programação, como Funcional, Procedural, e **Orientação a Objetos**.
 
