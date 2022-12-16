@@ -1,5 +1,30 @@
-import 'package:dart_oo/dart_oo.dart' as dart_oo;
+void main() {
+  String nome = 'Laranja';
+  double peso = 100.2;
+  String cor = "Verde e Amarela";
+  String sabor = "Doce e cítrica";
+  int diasDesdeColheita = 40;
+  bool isMadura;
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_oo.calculate()}!');
+  print(toString(nome: nome, peso: peso, diasDesdeColheita: diasDesdeColheita));
+}
+
+String toString({
+  required String nome,
+  required double peso,
+  required int diasDesdeColheita,
+  int diasParaMadura = 30,
+  bool? isMadura,
+}) {
+  isMadura ??= diasDesdeColheita >= diasParaMadura;
+
+  String maduraString = "";
+  if (!isMadura) {
+    maduraString = "não ";
+  }
+
+  String result =
+      "A $nome pesa $peso gramas! Ela foi colhida há  $diasDesdeColheita dias e precisa de  $diasParaMadura dias para amadurecer, logo, a $nome ${maduraString}está madura!";
+
+  return result;
 }
