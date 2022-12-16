@@ -6,7 +6,7 @@ Conteúdo estudado no curso [Dart: entendendo a Orientação a Objetos](https://
 
 ## 📌 Assuntos
 
-## 📜 Paradigmas
+## 📜 Paradigma de Orientação a Objetos
 
 Existem diversos tipos de paradigmas da programação, como Funcional, Procedural, e **Orientação a Objetos**.
 
@@ -100,7 +100,109 @@ Escopos são áreas de código em que tudo que está dentro dele pode ser usado 
 
 ### Classes
 
-> :construction: em construção :construction:
+Classes são utilizadas para representarmos objetos que possuem semelhanças em seus conceitos, características e ações. Exemplo:
+
+```dart
+class Fruta {
+  String nome;
+  double peso;
+  String cor;
+  String sabor;
+  int diasDesdeColheita;
+  bool? isMadura;
+
+  Fruta(this.nome, this.peso, this.cor, this.sabor, this.diasDesdeColheita,
+      {this.isMadura});
+}
+```
+
+> Instancação do objeto do tipo `Fruta`:
+
+```dart
+Fruta fruta = Fruta("Uva", 40, "Roxa", "Doce", 20);
+```
+
+> 📢 Pode-se realizar ações dentro de um construtor, exemplo:
+
+```dart
+Fruta.minusculas(this.nome, this.cor){
+  nome = nome.toLowerCase();
+  cor = cor.toLowerCase();
+}
+```
+
+### Herança
+
+Herança é uma das características de OO, permite que classes compartilhem entre si propriedades e métodos, assim, reaproveitando código utilizando os conceitos de generalização (classe mãe com conceitos gerais do objeto) e especificação (classe filha com conceitos mais especifícos). Exemplo:
+
+```dart
+class Alimento {
+  String nome;
+  double peso;
+  String cor;
+
+  Alimento(this.nome, this.peso, this.cor);
+
+  printAlimento() {
+    print('Este(a) $nome pesa $peso gramas e é $cor.');
+  }
+}
+
+class Legumes extends Alimento {
+  bool isPrecicaCozinhar;
+
+  Legumes(super.nome, super.peso, super.cor, this.isPrecicaCozinhar);
+}
+```
+
+### Classe Abstrata
+
+Classes abstratas são como moldes que obrigam as classes que a implementam a ter método obrigatórios.
+
+Exemplo:
+
+```dart
+abstract class Bolo {
+  void separarIngredientes();
+  void fazerMassa();
+  void assar();
+}
+
+```
+
+```dart
+class Legume extends Alimento implements Bolo {
+
+  //...
+
+  @override
+  void assar() {
+    // TODO: implement assar
+  }
+
+  @override
+  void fazerMassa() {
+    // TODO: implement fazerMassa
+  }
+
+  @override
+  void separarIngredientes() {
+    // TODO: implement separarIngredientes
+  }
+}
+```
+
+### Polimorfismo
+
+Polimorfismo é a habilidade de um método que veio de uma classe mãe, para isso usamos o `@override`, exemplo:
+
+```dart
+  @override
+  void fazerMassa() {
+    print('Tirar a casca');
+    super.fazerMassa();
+  }
+```
 
 ## ▶️ Como executar
 
@@ -108,7 +210,7 @@ Para executar qualquer um dos códigos você pode clonar o repositório, abrir a
 
 ```
 git clone https://github.com/jhoisz/Dart_OO
-cd Dart_OO
+cd Dart_OO/bin
 dart nomeDoCodigo.dart
 ```
 
