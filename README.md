@@ -1,4 +1,4 @@
-<h1 align="center"> Dart: 5 métodos da lista do Dart 📋 </h1>
+<h1 align="center"> Dart: entendendo a Orientação a Objeto 🪑 </h1>
 
 ## ℹ️ Sobre
 
